@@ -178,18 +178,23 @@ app.post('/checkout', async (req, res) => {
 const Users = mongoose.model('Users', {
     name: {
         type: String,
+        required: true
     },
     email: {
         type: String,
+        required: true
     },
     rollno: {
         type: String,
+        required: true
     },
     phone: {
         type: Number,
+        required: true
     },
     password: {
         type: String,
+        required: true
     },
     cartData: {
         type: Object,
